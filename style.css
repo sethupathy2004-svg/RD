@@ -1,0 +1,171 @@
+    gap: 0.85rem 1rem;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: var(--muted);
+    font-size: 0.92rem;
+    font-weight: 700;
+}
+
+.footer-note {
+    color: var(--muted);
+    text-align: right;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: opacity 700ms ease, transform 700ms ease;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.export-mode .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+.reveal:nth-child(2) {
+    transition-delay: 80ms;
+}
+
+.reveal:nth-child(3) {
+    transition-delay: 140ms;
+}
+
+.reveal:nth-child(4) {
+    transition-delay: 200ms;
+}
+
+@media (max-width: 1060px) {
+    .nav-shell {
+        border-radius: 1.4rem;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .hero,
+    .why-layout,
+    .contact-grid,
+    .footer-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: auto;
+        padding-top: 3.25rem;
+    }
+
+    .hero-copy h1,
+    .section-heading h2,
+    .contact-copy h2,
+    .quote-banner h2 {
+        max-width: 100%;
+    }
+
+    .service-grid,
+    .portfolio-grid,
+    .testimonial-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .why-cards,
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-note {
+        text-align: left;
+    }
+}
+
+@media (max-width: 720px) {
+    .shell {
+        width: min(100% - 1rem, 1180px);
+    }
+
+    .site-header {
+        padding-top: 0.7rem;
+    }
+
+    .site-nav {
+        gap: 0.6rem 0.9rem;
+    }
+
+    .hero {
+        gap: 1.25rem;
+        padding: 2.7rem 0 2rem;
+    }
+
+    .hero-copy h1 {
+        font-size: clamp(2.7rem, 13vw, 4rem);
+    }
+
+    .hero-trust,
+    .service-grid,
+    .portfolio-grid,
+    .testimonial-grid,
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-trust div,
+    .visual-card,
+    .content-card,
+    .service-card,
+    .why-card,
+    .portfolio-card,
+    .testimonial-card,
+    .process-panel,
+    .contact-form,
+    .quote-banner {
+        border-radius: 1.35rem;
+    }
+
+    .visual-stack {
+        grid-template-columns: 1fr;
+    }
+
+    .visual-card {
+        min-height: 16rem;
+    }
+
+    .mini-window {
+        min-height: 11rem;
+    }
+
+    .section {
+        padding: 2rem 0;
+    }
+
+    .content-card h3,
+    .service-card h3,
+    .why-card h3,
+    .portfolio-copy h3,
+    .process-panel h3 {
+        font-size: 1.7rem;
+    }
+
+    .testimonial-quote {
+        font-size: 1.65rem;
+    }
+
+    .button,
+    .nav-cta {
+        width: 100%;
+    }
+
+    .footer-inner {
+        gap: 0.8rem;
+    }
+
+    .footer-links,
+    .footer-note {
+        justify-content: flex-start;
+        text-align: left;
+    }
+}
