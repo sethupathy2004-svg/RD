@@ -1561,6 +1561,24 @@ main,
         grid-column: auto;
     }
 
+    .portfolio-preview {
+        aspect-ratio: 16 / 10;
+        min-height: 11rem;
+    }
+
+    .portfolio-feature .portfolio-preview {
+        min-height: 13rem;
+    }
+
+    .portfolio-preview::before {
+        inset: 0.45rem;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(7, 19, 29, 0.1));
+    }
+
+    .portfolio-preview::after {
+        opacity: 0.65;
+    }
+
     .hero-trust div,
     .visual-card,
     .content-card,
@@ -1617,7 +1635,6 @@ main,
         text-align: left;
     }
 }
-
 
 </style>
 <script>
